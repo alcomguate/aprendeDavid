@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julio Alan Vidaurre - 1704002004</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="css/milligram.min.css">
+
+    <link rel="stylesheet" href="css/numeros.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <nav class="menu">
+        <a class="button" href="index.html">INICIO</a>
+        <a class="button button-outline" href="matematica.html">Matem&aacute;tica</a>
+        <a class="button button-outline" href="ingles.html">Ingl&eacute;s</a>
+        <a class="button button-outline" href="frances.html">Franc&eacute;s</a>
+    </nav>
+
+    <div class="container tabla">
+        <div class="row">
+            <div class="column celdaNumero" onclick="playAudio('0')">
+                <audio id="numero0">
+                    <source src="audio/cero.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/cero.png" alt="cero"/>
+            </div>
+
+            <div class="column celdaNumero" onclick="playAudio('1')">
+                <audio id="numero1">
+                    <source src="audio/uno.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/uno.png" alt="uno"/>
+            </div>
+
+            <div class="column celdaNumero" onclick="playAudio('2')">
+                <audio id="numero2">
+                    <source src="audio/dos.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/dos.png" alt="dos"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column celdaNumero" onclick="playAudio('3')">
+                <audio id="numero3">
+                    <source src="audio/tres.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/tres.png" alt="tres"/>
+            </div>
+
+            <div class="column celdaNumero" onclick="playAudio('4')">
+                <audio id="numero4">
+                    <source src="audio/cuatro.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/cuatro.png" alt="cuatro"/>
+            </div>
+
+            <div class="column celdaNumero" onclick="playAudio('5')">
+                <audio id="numero5">
+                    <source src="audio/cinco.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/cinco.png" alt="cinco"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column celdaNumero" onclick="playAudio('6')">
+                <audio id="numero6">
+                    <source src="audio/seis.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/seis.png" alt="seis"/>
+            </div>
+
+            <div class="column celdaNumero" onclick="playAudio('7')">
+                <audio id="numero7">
+                    <source src="audio/siete.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/siete.png" alt="siete"/>
+            </div>
+            <div class="column celdaNumero" onclick="playAudio('8')">
+                <audio id="numero8">
+                    <source src="audio/ocho.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="numero" src="imagenes/numeros/ocho.png" alt="ocho"/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         
+        
+        function playAudio(indice) {
+            var identificador = "numero" + indice;
+            var x = document.getElementById(identificador); 
+            x.play(); 
+        } 
+        
+    </script>
+</body>
+</html>

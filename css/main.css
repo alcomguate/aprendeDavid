@@ -1,0 +1,26 @@
+body {
+    background-color: slategrey;
+}
+
+.card {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-right: 50px;
+    box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julio Alan Vidaurre - 1704002004</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="css/milligram.min.css">
+
+    <link rel="stylesheet" href="css/ingles.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <nav class="menu">
+        <a class="button" href="index.html">INICIO</a>
+        <a class="button button-outline" href="matematica.html">Matem&aacute;tica</a>
+        <a class="button button-outline" href="ingles.html">Ingl&eacute;s</a>
+        <a class="button button-outline" href="frances.html">Franc&eacute;s</a>
+    </nav>
+
+    <div class="container contenedor">
+
+        <div class="row">
+            <div class="column column-50 celda" onclick="playAudio('chien')">
+                <audio id="chien">
+                    <source src="audio/chien.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/frances/chien.png" alt="chien"/>
+                <h1>CHIEN</h1>
+            </div>
+            
+
+            <div class="column column-50 celda" onclick="playAudio('maison')">
+                <audio id="maison">
+                    <source src="audio/maison.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/frances/maison.png" alt="maison"/>
+                <h1>MAISON</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-50 celda" onclick="playAudio('pain')">
+                <audio id="pain">
+                    <source src="audio/pain.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/frances/pain.png" alt="pain"/>
+                <h1>PAIN</h1>
+            </div>
+
+            <div class="column column-50 celda" onclick="playAudio('voiture')">
+                <audio id="voiture">
+                    <source src="audio/voiture.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/frances/voiture.png" alt="voiture"/>
+                <h1>VOITURE</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    
+        function playAudio(identificador) {
+            var x = document.getElementById(identificador); 
+            x.play(); 
+        } 
+        
+    </script>
+</body>
+</html>

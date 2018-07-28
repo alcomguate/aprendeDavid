@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julio Alan Vidaurre - 1704002004</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="css/milligram.min.css">
+
+    <link rel="stylesheet" href="css/ingles.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <nav class="menu">
+        <a class="button" href="index.html">INICIO</a>
+        <a class="button button-outline" href="matematica.html">Matem&aacute;tica</a>
+        <a class="button button-outline" href="ingles.html">Ingl&eacute;s</a>
+        <a class="button button-outline" href="frances.html">Franc&eacute;s</a>
+    </nav>
+
+    <div class="container contenedor">
+
+        <div class="row">
+            <div class="column celda" onclick="playAudio('boy')">
+                <audio id="boy">
+                    <source src="audio/boy.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/ingles/boy.png" alt="boy"/>
+                <h1>BOY</h1>
+            </div>
+            
+
+            <div class="column celda" onclick="playAudio('girl')">
+                <audio id="girl">
+                    <source src="audio/girl.mp3" type="audio/mp3"/>
+                </audio>
+                <img class="imagen" src="imagenes/ingles/girl.png" alt="boy"/>
+                <h1>GIRL</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    
+        function playAudio(identificador) {
+            var x = document.getElementById(identificador); 
+            x.play(); 
+        } 
+        
+    </script>
+</body>
+</html>
